@@ -10,7 +10,7 @@
 int main(){
     SetProcessDPIAware(); // Ensure full-screen capture even when taskbar is hovered
     // Replace PlaySound with mciSendString to play an MP3 file
-    mciSendString("open \"C:\\Users\\damian\\Downloads\\salinewinmp3.mp3\" type mpegvideo alias mp3", NULL, 0, NULL);
+    mciSendString("PATH_HERE (USE \\)" type mpegvideo alias mp3", NULL, 0, NULL);
     mciSendString("play mp3", NULL, 0, NULL);
     srand((unsigned int)time(NULL));
     int screenX = GetSystemMetrics(SM_CXSCREEN);
